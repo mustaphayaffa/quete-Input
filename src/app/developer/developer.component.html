@@ -1,0 +1,8 @@
+<p>developer works!</p>
+{{myDeveloper.lastname}}
+{{myDeveloper.firstname}}
+{{myDeveloper.age}}
+{{myDeveloper.gender}}
+{{myDeveloper.bio}}
+<app-skill *ngFor = 'let item of myDeveloper.skills' [nomskill]="item.name" [logoskill]="item.logo" [siteskill]="item.site"></app-skill>
+
